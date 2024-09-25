@@ -1,8 +1,12 @@
 public class Metodos {
 
-    /*public Metodos(){
-    System.out.println("Se creo la clase metodos");    
-    }*/
+    /*
+     * public Metodos(){
+     * System.out.println("Se creo la clase metodos");
+     * }
+     */
+
+    // Metodo de ordenacion Ascendente
 
     public int[] sortbyBubble(int[] arreglo) {
 
@@ -22,12 +26,14 @@ public class Metodos {
 
         return arreglo;
     }
-    // for each (metodo mas corto de for)
-    public void printArreglo(int[] arreglo){
-        for (int elemento: arreglo) {
-            System.out.print(elemento+" ");
+
+    // for - each (metodo mas corto de for)
+    public void printArreglo(int[] arreglo) {
+        for (int elemento : arreglo) {
+            System.out.print(elemento + " ");
         }
     }
+    // Metodo de ordenacion Descendente
 
     public int[] sortbyBubbleDes(int[] arreglo) {
 
@@ -47,11 +53,9 @@ public class Metodos {
 
         return arreglo;
     }
-    public void printArregloDes(int[] arreglo){
-        for (int elemento: arreglo) {
-            System.out.print(elemento+" ");
-        }
-    }
+
+
+    // Metodo de Ordenacion por palabras
 
     public String[] sortbyBubblePalabras(String[] palabras) {
 
@@ -59,7 +63,7 @@ public class Metodos {
 
         for (int i = 0; i < tamanio; i++) {
             for (int j = i + 1; j < tamanio; j++) {
-                if (palabras[i].compareToIgnoreCase(palabras[j])>0) {
+                if (palabras[i].compareToIgnoreCase(palabras[j]) > 0) {
                     String aux = palabras[i];
                     palabras[i] = palabras[j];
                     palabras[j] = aux;
@@ -69,13 +73,13 @@ public class Metodos {
             }
         }
 
-        return palabras ;
+        return palabras;
     }
-    public void printpalabrasOrdenadas(int[] arreglo){
-        for (int elemento: arreglo) {
+
+    public void printpalabrasOrdenadas(String[] arreglo) {
+        for (String elemento : arreglo) {
             System.out.println(elemento);
         }
     }
-
 
 }
